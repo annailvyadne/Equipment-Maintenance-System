@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="451.0" prefWidth="525.0" spacing="5.0" style="-fx-background-color: #E8F4F8;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gabriel.mainms.EditmainController">
+
+	<padding>
+		<Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
+	</padding>
+
+	<!-- Title at the top -->
+	<Label alignment="CENTER" style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-padding: 10px;" text="Edit Record" />
+
+	<!-- Buttons at the top -->
+	<HBox alignment="TOP_CENTER" layoutX="30.0" layoutY="297.0" prefHeight="30.0" prefWidth="200.0" spacing="19.0">
+		<children>
+			<Button fx:id="btnBack" mnemonicParsing="false" onAction="#onBack" style="-fx-background-color: #F6DCAC; -fx-text-fill: black; -fx-border-width: 2px; -fx-font-size: 10px; -fx-font-weight: bold;" text="&lt;&lt; Back">
+				<font>
+					<Font size="10.0" />
+				</font>
+			</Button>
+			<Button fx:id="btnUpdate" mnemonicParsing="false" onAction="#onSubmit" style="-fx-background-color: #F6DCAC; -fx-text-fill: black; -fx-border-width: 2px; -fx-font-size: 10px; -fx-font-weight: bold;" text="Submit" />
+			<Button fx:id="btnClose" mnemonicParsing="false" onAction="#onClose" style="-fx-background-color: #F6DCAC; -fx-text-fill: black; -fx-border-width: 2px; -fx-font-size: 10px; -fx-font-weight: bold;" text="Close" />
+		</children>
+	</HBox>
+
+	<!-- Form fields with center alignment -->
+	<VBox alignment="CENTER" spacing="10.0">
+		<HBox alignment="CENTER" prefHeight="30.0" prefWidth="200.0">
+			<Label alignment="CENTER" prefWidth="80.0" text="Id">
+				<padding>
+					<Insets left="10.0" />
+				</padding>
+			</Label>
+			<TextField fx:id="txtId" editable="false" prefWidth="200.0" />
+		</HBox>
+
+		<HBox alignment="CENTER" prefHeight="30.0" prefWidth="200.0">
+			<Label alignment="CENTER" prefWidth="80.0" text="Hospital">
+				<padding>
+					<Insets left="10.0" />
+				</padding>
+			</Label>
+			<StackPane prefHeight="150.0" prefWidth="200.0">
+				<children>
+					<ComboBox fx:id="cmbHospital" prefWidth="200.0" />
+					<TextField fx:id="txtHospitalName" editable="false" prefWidth="150.0" />
+				</children>
+			</StackPane>
+		</HBox>
+
+		<HBox alignment="CENTER" prefHeight="30.0" prefWidth="200.0">
+			<Label alignment="CENTER" prefWidth="80.0" text="Department">
+				<padding>
+					<Insets left="10.0" />
+				</padding>
+			</Label>
+			<StackPane prefHeight="150.0" prefWidth="200.0">
+				<children>
+					<ComboBox fx:id="cmbDepartment" prefWidth="200.0" />
+					<TextField fx:id="txtDepartmentName" editable="false" prefWidth="150.0" />
+				</children>
+			</StackPane>
+		</HBox>
+
+		<HBox alignment="CENTER" prefHeight="30.0" prefWidth="200.0">
+			<Label alignment="CENTER" prefWidth="80.0" text="Equipment">
+				<padding>
+					<Insets left="10.0" />
+				</padding>
+			</Label>
+			<StackPane prefHeight="150.0" prefWidth="200.0">
+				<children>
+					<ComboBox fx:id="cmbEquipment" prefWidth="200.0" />
+					<TextField fx:id="txtEquipmentName" editable="false" prefWidth="150.0" />
+				</children>
+			</StackPane>
+		</HBox>
+
+		<HBox alignment="CENTER" prefHeight="30.0" prefWidth="200.0">
+			<Label alignment="CENTER" prefWidth="80.0" text="Status">
+				<padding>
+					<Insets left="10.0" />
+				</padding>
+			</Label>
+			<StackPane prefHeight="150.0" prefWidth="200.0">
+				<children>
+					<ComboBox fx:id="cmbStatus" prefWidth="200.0" />
+					<TextField fx:id="txtStatusName" editable="false" prefWidth="150.0" />
+				</children>
+			</StackPane>
+		</HBox>
+
+		<HBox alignment="CENTER" prefHeight="30.0" prefWidth="200.0">
+			<Label alignment="CENTER" prefWidth="80.0" text="Technician">
+				<padding>
+					<Insets left="10.0" />
+				</padding>
+			</Label>
+			<StackPane prefHeight="150.0" prefWidth="200.0">
+				<children>
+					<ComboBox fx:id="cmbTechnician" prefWidth="200.0" />
+					<TextField fx:id="txtTechnicianName" editable="false" prefWidth="150.0" />
+				</children>
+			</StackPane>
+		</HBox>
+
+		<HBox alignment="CENTER" prefHeight="30.0" prefWidth="200.0">
+			<Label alignment="CENTER" prefWidth="80.0" text="Task">
+				<padding>
+					<Insets left="10.0" />
+				</padding>
+			</Label>
+			<StackPane prefHeight="150.0" prefWidth="200.0">
+				<children>
+					<ComboBox fx:id="cmbTask" prefWidth="200.0" />
+					<TextField fx:id="txtTaskName" editable="false" prefWidth="150.0" />
+				</children>
+			</StackPane>
+		</HBox>
+
+		<HBox alignment="CENTER" prefHeight="30.0" prefWidth="200.0">
+			<Label alignment="CENTER" prefWidth="80.0" text="TaskDescription">
+				<padding>
+					<Insets left="10.0" />
+				</padding>
+			</Label>
+			<TextField fx:id="txtTaskDescription" editable="false" prefWidth="200.0" />
+		</HBox>
+	</VBox>
+</VBox>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="795.0" prefWidth="718.0" spacing="5.0" style="-fx-background-color: #E8F4F8;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gabriel.mainms.ManagemainController">
+	<padding>
+		<Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
+	</padding>
+	<Label text="Hospital Equipment Maintenance Service">
+		<font>
+			<Font name="Arial Black" size="20.0" />
+		</font>
+		<VBox.margin>
+			<Insets bottom="20.0" top="20.0" />
+		</VBox.margin>
+	</Label>
+	<HBox prefHeight="585.0" prefWidth="678.0" spacing="20">
+		<VBox spacing="10">
+			<ListView fx:id="lvmains" onMouseClicked="#onAction" prefHeight="339.0" prefWidth="410.0" />
+
+			<!-- Horizontal buttons container -->
+			<HBox alignment="CENTER" spacing="10">
+				<Button fx:id="btnCreate" mnemonicParsing="false" onAction="#onCreate" style="-fx-font-weight: bold; -fx-font-size: 12px;" text="Create" />
+				<Button fx:id="btnEdit" mnemonicParsing="false" onAction="#onEdit" style="-fx-font-weight: bold; -fx-font-size: 12px;" text="Edit" />
+				<Button fx:id="btnDelete" mnemonicParsing="false" onAction="#onDelete" style="-fx-font-weight: bold; -fx-font-size: 12px;" text="Delete" />
+				<Button fx:id="btnClose" mnemonicParsing="false" onAction="#onClose" style="-fx-font-weight: bold; -fx-font-size: 12px;" text="Close" />
+			</HBox>
+         <Button mnemonicParsing="false" onAction="#onLearnMore" text="Learn More" />
+		</VBox>
+
+		<VBox spacing="10">
+			<Label style="-fx-font-weight: bold; -fx-font-size: 14px;" text="Id">
+				<font>
+					<Font name="Segoe UI" size="12.0" />
+				</font>
+			</Label>
+			<TextField fx:id="txtId" editable="false" prefWidth="200.0" />
+
+			<Label style="-fx-font-weight: bold; -fx-font-size: 14px;" text="Hospital">
+				<font>
+					<Font name="Segoe UI" size="12.0" />
+				</font>
+			</Label>
+			<StackPane prefWidth="200.0">
+				<ComboBox fx:id="cmbHospital" prefWidth="200.0" />
+				<TextField fx:id="txtHospitalName" editable="false" prefWidth="150.0" />
+			</StackPane>
+
+			<Label style="-fx-font-weight: bold; -fx-font-size: 14px;" text="Department">
+				<font>
+					<Font name="Segoe UI" size="12.0" />
+				</font>
+			</Label>
+			<StackPane prefWidth="200.0">
+				<ComboBox fx:id="cmbDepartment" prefWidth="200.0" />
+				<TextField fx:id="txtDepartmentName" editable="false" prefWidth="150.0" />
+			</StackPane>
+
+			<Label style="-fx-font-weight: bold; -fx-font-size: 14px;" text="Equipment">
+				<font>
+					<Font name="Segoe UI" size="12.0" />
+				</font>
+			</Label>
+			<StackPane prefWidth="200.0">
+				<ComboBox fx:id="cmbEquipment" prefWidth="200.0" />
+				<TextField fx:id="txtEquipmentName" editable="false" prefWidth="150.0" />
+			</StackPane>
+
+			<Label style="-fx-font-weight: bold; -fx-font-size: 14px;" text="Status">
+				<font>
+					<Font name="Segoe UI" size="12.0" />
+				</font>
+			</Label>
+			<StackPane prefWidth="200.0">
+				<ComboBox fx:id="cmbStatus" prefWidth="200.0" />
+				<TextField fx:id="txtStatusName" editable="false" prefWidth="150.0" />
+			</StackPane>
+
+			<Label style="-fx-font-weight: bold; -fx-font-size: 14px;" text="Technician">
+				<font>
+					<Font name="Segoe UI" size="2.0" />
+				</font>
+			</Label>
+			<StackPane prefWidth="200.0">
+				<ComboBox fx:id="cmbTechnician" prefWidth="200.0" />
+				<TextField fx:id="txtTechnicianName" editable="false" prefWidth="150.0" />
+			</StackPane>
+
+			<Label style="-fx-font-weight: bold; -fx-font-size: 14px;" text="Task">
+				<font>
+					<Font name="Segoe UI" size="12.0" />
+				</font>
+			</Label>
+			<StackPane prefWidth="200.0">
+				<ComboBox fx:id="cmbTask" prefWidth="200.0" />
+				<TextField fx:id="txtTaskName" editable="false" prefWidth="150.0" />
+			</StackPane>
+
+			<Label style="-fx-font-weight: bold; -fx-font-size: 14px;" text="Task Description">
+				<font>
+					<Font name="Segoe UI" size="12.0" />
+				</font>
+			</Label>
+			<TextField fx:id="txtTaskDescription" editable="false" prefWidth="200.0" />
+		</VBox>
+	</HBox>
+</VBox>

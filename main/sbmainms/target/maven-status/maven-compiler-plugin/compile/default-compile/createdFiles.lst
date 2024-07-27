@@ -1,0 +1,15 @@
+com\gabriel\mainms\mainMSApplication.class
+com\gabriel\mainms\serviceimpl\DepartmentServiceImpl.class
+com\gabriel\mainms\serviceimpl\StatusServiceImpl.class
+com\gabriel\mainms\serviceimpl\TaskServiceImpl.class
+com\gabriel\mainms\controller\TaskController.class
+com\gabriel\mainms\controller\DepartmentController.class
+com\gabriel\mainms\serviceimpl\EquipmentServiceImpl.class
+com\gabriel\mainms\serviceimpl\HospitalServiceImpl.class
+com\gabriel\mainms\serviceimpl\TechnicianServiceImpl.class
+com\gabriel\mainms\controller\EquipmentController.class
+com\gabriel\mainms\controller\HospitalController.class
+com\gabriel\mainms\controller\StatusController.class
+com\gabriel\mainms\controller\TechnicianController.class
+com\gabriel\mainms\controller\mainController.class
+com\gabriel\mainms\serviceimpl\mainServiceImpl.class

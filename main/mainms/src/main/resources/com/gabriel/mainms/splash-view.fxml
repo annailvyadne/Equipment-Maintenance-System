@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="404.0" prefWidth="584.0" style="-fx-background-color: #F6DCAC;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gabriel.mainms.SplashViewController">
+    <children>
+        <Button layoutX="151.0" layoutY="252.0" mnemonicParsing="false" onAction="#onClicked" text="Log In" />
+
+        <!-- Pane with teal background -->
+        <Pane layoutX="304.0" prefHeight="406.0" prefWidth="280.0">
+            <background>
+                <Background>
+                    <fills>
+                        <BackgroundFill fill="#028391" />
+                    </fills>
+                </Background>
+            </background>
+         <children>
+            <Label layoutX="96.0" layoutY="203.0" text="Welcome" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="39.0" layoutY="246.0" text="Your best partner for your cinvenience" textFill="WHITE" />
+         </children>
+        </Pane>
+
+        <Label layoutX="52.0" layoutY="169.0" text="Email" />
+        <Label layoutX="52.0" layoutY="201.0" text="Password" />
+        <PasswordField fx:id="passwordField" layoutX="113.0" layoutY="197.0" />
+        <TextField fx:id="usernameField" layoutX="113.0" layoutY="157.0" />
+      <Label layoutX="62.0" layoutY="67.0" text="Philips Maintenace">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="85.0" layoutY="97.0" text="Log In to your account">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

@@ -1,0 +1,16 @@
+com\gabriel\mainms\service\DepartmentService.class
+com\gabriel\mainms\ManagemainJFXApp.class
+com\gabriel\mainms\DeletemainController.class
+com\gabriel\mainms\SplashViewController.class
+com\gabriel\mainms\service\HospitalService.class
+com\gabriel\mainms\service\StatusService.class
+com\gabriel\mainms\service\TaskService.class
+com\gabriel\mainms\GenericmainController.class
+com\gabriel\mainms\service\TechnicianService.class
+com\gabriel\mainms\EditmainController.class
+com\gabriel\mainms\ManagemainApplication.class
+com\gabriel\mainms\ManagemainController.class
+com\gabriel\mainms\service\EquipmentService.class
+com\gabriel\mainms\CreatemainController.class
+com\gabriel\mainms\model\main.class
+com\gabriel\mainms\service\mainService.class
